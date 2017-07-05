@@ -1,0 +1,39 @@
+body{
+background-image: url("../img/3d-fondo-de-pantalla-personalizado-mural-retro-estilo-de-font-b-fitness-b-font-de-fondo.jpg");
+}
+.body{
+background-image: url("../img/FONDO.jpg");
+}
+.header{
+opacity: 0.8;
+}
+.opciones{
+background-color: gray;
+width: 24pc;
+border: 1px solid darkgray
+}
+div {
+display: block;
+}
+.submenu {
+position: absolute;
+text-align: center;
+display: flex;
+left: 7pc;
+}
+.a{
+color: black;
+text-decoration: none;
+}
+.img{
+opacity: 0.8;
+position: absolute;
+height: 75vh !important;
+width: 75vh !important;
+}
+.radio-inline{
+color: black;
+}
+.help-block{
+color:black;
+}
