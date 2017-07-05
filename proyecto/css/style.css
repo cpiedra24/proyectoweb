@@ -32,8 +32,52 @@ height: 75vh !important;
 width: 75vh !important;
 }
 .radio-inline{
-color: black;
-}
+font: oblique bold 120% cursive;}
 .help-block{
 color:black;
+}
+.form-control{
+margin: 10px;
+font-size: 15px;
+height: 34px;
+background-color: #fdfdfd;
+
+}
+
+<!-- DFA-->
+.wrapper {
+margin-top: 80px;
+margin-bottom: 80px;
+}
+.form-signin {
+max-width: 380px;
+padding: 104px 35px 45px;
+margin: 0 auto;
+.form-signin-heading,
+.checkbox {
+margin-bottom: 30px;
+}
+.checkbox {
+font-weight: normal;
+}
+.form-control {
+position: relative;
+font-size: 16px;
+height: auto;
+padding: 10px;
+}
+}
+input[type="text"] {
+margin-bottom: 34px;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+input[type="password"] {
+margin-bottom: 20px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+.form-signin-heading{
+font: oblique bold 200% cursive;
+color: black;
 }

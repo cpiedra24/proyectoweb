@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type ="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<link rel="stylesheet" type ="text/css" href="css/style.css">
-		<title><h1>Deón</h1></title>
+		<title><h1>Deón</h1>Deón</title>
 	</head>
-	<body class = "body">
+	<body>
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -20,13 +20,15 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bgc-blue">
-					<p>Hacer deporte está de moda, por lo que no estamos ante ninguna novedad ni ante ningún secreto de Estado. Como tampoco lo es el postureo derivado de las prácticas 'fitness': compartir en tus redes sociales tu resultados adjuntando algún 'selfie' que demuestre tus progresos, así como un sinfín de pruebas que demuestran tu amor incondicional por el ejercicio físico.</p>
-				</div>
-			</div>
-			
+		<div class="wrapper">
+			<form class="form-signin">
+				<input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+				<input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+				<label class="checkbox">
+					<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+				</label>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+			</form>
 		</div>
 	</body>
 	<script type = "text/javascrip" scs = "bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
