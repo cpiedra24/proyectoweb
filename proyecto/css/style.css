@@ -1,7 +1,7 @@
-.bodysign{
+.bodylogin{
 background-image: url("../img/3d-fondo-de-pantalla-personalizado-mural-retro-estilo-de-font-b-fitness-b-font-de-fondo.jpg");
 }
-.bodylogin{
+.divimg{
 background-image: url("../img/3d-fondo-de-pantalla-personalizado-mural-retro-estilo-de-font-b-fitness-b-font-de-fondo.jpg");
 }
 .header{
@@ -114,7 +114,7 @@ background-color: white;
 color: red;
 position: absolute;
 width: 83pc;
-left: 75px;
+left: 13px;
 height: 1029px;
 top: 72px;
 background-repeat: no-repeat;
@@ -133,10 +133,9 @@ p {
 margin: 69pc 259px;
 background-color: #e8ffe8;
 }
-
 .infogeneral{
 font: 400 14px/14px roboto-font,Arial,Helvetica,sans-serif;
-margin: 0px auto 46px;
+margin: -132px auto 29px;
 padding: -19px 13px;
 display: contents;
 width: 588px;
@@ -268,4 +267,9 @@ background: #00abf0;
 .social ul li a:hover{
 padding: 10px 30px;
 background: #000;
+}
+.carousel {
+position: absolute;
+top: 280%;
+left: 23%;
 }
