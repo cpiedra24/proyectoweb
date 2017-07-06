@@ -4,10 +4,6 @@ background-image: url("../img/3d-fondo-de-pantalla-personalizado-mural-retro-est
 .bodylogin{
 background-image: url("../img/3d-fondo-de-pantalla-personalizado-mural-retro-estilo-de-font-b-fitness-b-font-de-fondo.jpg");
 }
-.descripcion{
-background-image: url("../img/FONDO.jpg");
-background-repeat: no-repeat;
-}
 .header{
 opacity: 0.8;
 }
@@ -118,9 +114,10 @@ background-color: white;
 color: red;
 position: absolute;
 width: 83pc;
-left: 11px;
-height: 857px;
-top: 391px;
+left: -81px;
+height: 1029px;
+top: 123px;
+background-repeat: no-repeat;
 }
 .btn-facebook {
 color: #fff;
@@ -222,4 +219,17 @@ display: flex;
 position: absolute;
 top: 87px;
 left: 12px;
+}
+.infogeneral{
+font: 400 14px/14px roboto-font,Arial,Helvetica,sans-serif;
+margin: -63px auto 29px;
+padding: 5px 154px;
+display: contents;
+width: auto;
+background: #a52e2e;
+color: #FFF;
+text-transform: uppercase;
+text-align: center;
+-webkit-border-radius: 5px;
+border-radius: 21px;
 }
