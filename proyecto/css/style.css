@@ -253,11 +253,30 @@ background: #000;
 .carousel {
 position: absolute;
 top: 1468px;
-left: 23%;
+left: 8	%;
 }
 .infoFinal{
 background: #000000;
 padding: 20px 0 40px;
 color: #fff;
 margin-top: 1977px	;
+}
+.nutricion{
+font-family: 'Roboto',sans-serif;
+font-size: 14px;
+line-height: 1;
+margin-top: 0;
+border-bottom: 2px solid #222;
+border-bottom-left-radius: 12px;
+position: absolute;
+top: 1761px;
+left: 833px;
+}
+.block-tittle span{
+border-color: #185990;
+line-height: 17px;
+display: inline-block;
+padding: 7px 12px 4px;
+background-color: #222;
+color: #fff;
 }
