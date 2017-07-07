@@ -88,13 +88,6 @@ margin: 10px 0 50px 0;
 text-align: center;
 letter-spacing: -1px;
 }
-.newsection{
-font: 200 19px/23px roboto-font,Arial,Helvetica,sans-serif;
-display: block;
-width: 850px;
-margin: 0 auto 50px;
-text-align: center;
-}
 .subtitle{
 font: 400 14px/14px roboto-font,Arial,Helvetica,sans-serif;
 margin: 0 auto 40px;
@@ -118,16 +111,6 @@ left: 13px;
 height: 1029px;
 top: 72px;
 background-repeat: no-repeat;
-}
-.btn-facebook {
-color: #fff;
-background-color: #3b5998;
-border-color: rgba(0,0,0,.2);
-}
-.btn-twitter {
-color: #fff;
-background-color: #55acee;
-border-color: rgba(0,0,0,.2);
 }
 p {
 margin: 69pc 259px;
@@ -235,7 +218,6 @@ border-radius: 21px;
 }
 p {
 margin: 69px 71px;
-background-color: #ffffff;
 position: absolute;
 top: 79pc;
 }
@@ -270,6 +252,12 @@ background: #000;
 }
 .carousel {
 position: absolute;
-top: 280%;
+top: 1468px;
 left: 23%;
+}
+.infoFinal{
+background: #000000;
+padding: 20px 0 40px;
+color: #fff;
+margin-top: 1977px	;
 }
