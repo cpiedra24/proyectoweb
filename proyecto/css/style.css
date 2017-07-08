@@ -1,3 +1,6 @@
+body{
+background-color: #f9f2f2;
+}
 .bodylogin{
 background-image: url("../img/3d-fondo-de-pantalla-personalizado-mural-retro-estilo-de-font-b-fitness-b-font-de-fondo.jpg");
 }
@@ -114,7 +117,6 @@ background-repeat: no-repeat;
 }
 p {
 margin: 69pc 259px;
-background-color: #e8ffe8;
 }
 .infogeneral{
 font: 400 14px/14px roboto-font,Arial,Helvetica,sans-serif;
@@ -217,7 +219,7 @@ text-align: center;
 border-radius: 21px;
 }
 p {
-margin: 69px 71px;
+margin: 56px 156px;
 position: absolute;
 top: 79pc;
 }
@@ -267,7 +269,6 @@ font-size: 14px;
 line-height: 1;
 margin-top: 0;
 border-bottom: 2px solid #222;
-border-bottom-left-radius: 12px;
 position: absolute;
 top: 1761px;
 left: 833px;
@@ -279,4 +280,20 @@ display: inline-block;
 padding: 7px 12px 4px;
 background-color: #222;
 color: #fff;
+}
+.imgenzimas{
+background-image: url(../img/enzimas-324x160.jpg);
+color: red;
+position: absolute;
+width: 20pc;
+left: 686px;
+height: 291px;
+top: -581px;
+background-repeat: no-repeat;
+}
+.urlNutricion{
+position: relative;
+top: -421px;
+left: 614px;
+margin-right: 708px;
 }
