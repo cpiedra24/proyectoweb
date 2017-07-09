@@ -297,3 +297,31 @@ top: -421px;
 left: 614px;
 margin-right: 708px;
 }
+.nutri{
+font-size: 13px;
+color: #777;
+font-family: 'Open Sans',arial,sans-serif;
+position: relative;
+top: -413px;
+left: 613px;
+}
+.controlPeso {
+width: 200px;
+position: absolute;
+height: 154px;
+left: 1003px;
+background-color: #cecece;
+color: rgb(120, 93, 93);
+text-align: center;
+top: 263px;
+}
+.dropdown{
+position: relative;
+top: -63px;
+left: 1172px;
+}
+.btn-primary {
+color: #fff;
+background-color: #343232;
+border-color: #f1f1f1;
+}
