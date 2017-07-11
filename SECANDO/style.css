@@ -1,0 +1,72 @@
+.tituloCentrado h3{
+text-align: center !important;
+background-color: #000000;
+color: #ffffff;
+border-radius: 16px;
+}
+.imgFondo{
+height: 25%;
+width: 100%;
+}
+.titleInfo{
+text-align: center !important;
+background-color: #a52e2e;
+color: #ffffff;
+border-radius: 16px;
+margin-top: 25px;
+}
+.img_div{
+height: 75vh !important;
+width: 100% !important;
+}
+footer{
+background-color: #000000;
+color: #ffffff;
+margin-top: 25px;
+}
+#sigUp,#bodylogin{
+background-image: url("imagenes/pesas.jpg");
+}
+#sigUp input{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#sigUp .btn-block{
+margin-top: 20px !important;
+margin-bottom: 20px !important;
+}
+#sigUp .radio-inline{
+margin-top: 20px !important;
+margin-bottom: 20px !important;
+}
+#bodylogin input{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#bodylogin .btn-block{
+margin-top: 20px !important;
+margin-bottom: 20px !important;
+}
+#bodylogin form{
+margin-top: 25%;
+}
+.cliente ul{
+background-color: grey;
+margin-top: 5%;
+list-style:none;
+}
+.cliente ul li:hover{
+background-color: #E9E5DC;
+}
+.cliente ul li{
+
+
+line-height: 48px;
+margin-top: 5%;
+}
+.cliente ul li a{
+color:#ffffff;
+}
+.peso{
+background-color: grey;
+}
