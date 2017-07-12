@@ -1,19 +1,20 @@
-.tituloCentrado h3{
+.tituloCentrado p{
 text-align: center !important;
 background-color: #000000;
 color: #ffffff;
 border-radius: 16px;
+margin-top: 41px;
+}
+.tituloCentrado h1{
+font-size: 34px;
+text-align: center;
+}
+.tituloCentrado h4{
+text-align: center;
 }
 .imgFondo{
 height: 25%;
 width: 100%;
-}
-.titleInfo{
-text-align: center !important;
-background-color: #a52e2e;
-color: #ffffff;
-border-radius: 16px;
-margin-top: 25px;
 }
 .img_div{
 height: 75vh !important;
@@ -65,6 +66,38 @@ margin-top: 5%;
 .cliente ul li a{
 color:#ffffff;
 }
+.cliente{
+margin-left: 27px;
+margin-top: 109px;
+margin: 63px;
+}
 .peso{
+background-color: #e0cece;
+}
+.textoLargo{
+margin-right: 152px;
+text-align: center;
+margin-left: 100px;
+margin-top: 28px;
+}
+.rutinas{
 background-color: grey;
+}
+.nav-stacked{
+width: 38%;
+margin-top: 0%;
+}
+.columna{
+width: 10%;
+}
+.table-bordered{
+margin-top: 13%;
+width: 68%;
+margin-left: 23%;
+}
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
 }
