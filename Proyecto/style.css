@@ -57,7 +57,7 @@ margin-top: 5%;
 list-style:none;
 }
 .cliente ul li:hover{
-background-color: #E9E5DC;
+background-color: #bba9a9;
 }
 .cliente ul li{
 line-height: 48px;
@@ -73,6 +73,8 @@ margin: 63px;
 }
 .peso{
 background-color: #e0cece;
+margin-left: 4%;
+margin-top: 3%;
 }
 .textoLargo{
 margin-right: 152px;
@@ -82,6 +84,8 @@ margin-top: 28px;
 }
 .rutinas{
 background-color: grey;
+width: 55%;
+margin-top: 3%;
 }
 .nav-stacked{
 width: 38%;
@@ -100,4 +104,12 @@ small {
 display: block;
 line-height: 1.428571429;
 color: #999;
+}
+.nombredelacaja{
+width: 38%;
+background-color: #e8d3d7;
+}
+.perfil{
+margin-top: 9%;
+margin-left: 27%;
 }
