@@ -3,41 +3,24 @@
 $( document ).ready(function() {
    /*traer usuarios para comparar de una*/
 
-    $( "#btn_clientes" ).click(function() {
-        llenarTabla();
-    });
-
+	llenarTabla();
+	$('.btn-primary').click(function(){
+		var correo = $(this).val();
+		$('#usuarioRutina').html(correo);
+	});
 });
 
 function llenarTabla(){
-	var tbody = document.querySelector('#tablaCliente tbody');
-	tbody.innerHTML = '';
-
-	var nombre = JSON.parse(localStorage.getItem('nombre'));
-	var peso = JSON.parse(localStorage.getItem('peso'));
-	var altura = JSON.parse(localStorage.getItem('altura'));
-
-	var cantUsuarios = nombre.lenght;
-	for (var i = 0; i< cantUsuarios; i++) {
-	var fila = document.createElement('tr');
-	var celdaNombre = document.createElement('td');
-	var celdaPeso = document.createElement('td');
-	var celdaAltura = document.createElement('td');
-
-	var ndoNombre = document.createTextNode(nombre[i]),
-		ndoPeso = document.createTextNode(peso[i]),
-		ndoAltura = document.createTextNode(altura[i]);
-
-
-		celdaNombre.appendChild(ndoNombre);
-		celdaPeso.appendChild(ndoPeso);
-		celdaAltura.appendChild(ndoAltura);
-
-		fila.appendChild(celdaNombre);
-		fila.appendChild(celdaPeso);
-		fila.appendChild(celdaAltura);
-
-		tbody.appendChild(fila); 
-
+	var usuarios = JSON.parse(localStorage.getItem('usuario'));
+	if(!usuarios){
+		usuarios = new Array();
 	}
+	var tbody = document.getElementById('tablaCliente');
+
+	for(var i = 0; i < usuarios.length; i++){
+		tbody.innerHTML +=	"<tr><td>"+usuarios[i].nombre+"</td><td>"+usuarios[i].peso+"</td>"+
+		"<td>"+usuarios[i].altura+"</td><td><button value = "+usuarios[i].correo+" class = 'btn btn-primary' data-toggle='modal' data-target='#myModal'>Rutina</button></td></tr>";	
+	
+	}
+
 }
