@@ -31,6 +31,7 @@ function llenarTabla(){
 function guardarRutina(){
 	var  usuario = document.getElementById('usuarioRutina').innerHTML;
 	var rutinas = JSON.parse(localStorage.getItem('rutinas'));
+
   if(!rutinas){
   rutinas = new Array();
   }
@@ -106,3 +107,4 @@ function eliminarusuario() {
         location.href = "adminTabla.html";
 	}	
  }
+ 
