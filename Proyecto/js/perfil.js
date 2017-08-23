@@ -19,4 +19,5 @@ function obtenerUsuario(){
       	break;
   		}
     }
+    
 }

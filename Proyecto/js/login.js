@@ -27,7 +27,7 @@ function loguearse() {
         }
         if (usuariocorrecto == true) {
             localStorage.setItem('activo',username);
-            location.href = "cliente.html";
+            location.href = "admin.html";
         }
     }
 }
