@@ -12,7 +12,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="style.css">
 		<script type = "text/javascript" src = "js/cargarTablas.js"></script>
-<script type = "text/javascript" src = "js/loginAdmin.js"></script>
+		<script type = "text/javascript" src = "js/login.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse ">
@@ -23,8 +23,7 @@
 							<a class="navbar-brand" href="index.html">Deón</a>
 						</div>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="perfilAdmin.html"><span class="glyphicon glyphicon-folder-open"></span> Perfil</a></li>
-		<li><a class = "btn" onclick="logOut()"><span class="glyphicon glyphicon-log-out" ></span> Log Out</a></li>
+							<li><a class = "btn" onclick="logOut()"><span class="glyphicon glyphicon-log-out" ></span> Log Out</a></li>
 						</ul>
 					</div>
 				</div>
@@ -38,22 +37,20 @@
 				<li><a href="ingresos.html"><span class="glyphicon glyphicon-usd"></span> Ingresos</a></li>
 			</ul>
 		</div>
-
 		<!-- -->
 		<div class="container">
-
 			<table class="table table-bordered">
 				<thead>
 					<tr>
 						<th class = "columna">Primer nombre</th>
 						<th class = "columna">Altura</th>
 						<th class = "columna">Peso</th>
+						<th class = "columna">Pago</th>
 						<th class = "columna">Rutinas</th>
 						<th class = "columna">Eliminar</th>
 					</tr>
 				</thead>
 				<tbody id="tablaCliente" >
-
 				</tbody>
 			</table>
 		</div>
@@ -65,7 +62,7 @@
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 						<h4 class="modal-title">Crear Rutinas</h4>
-					    <label id = "usuarioRutina"></label>
+						<label id = "usuarioRutina"></label>
 					</div>
 					<div class="modal-body">
 						<textarea id = "rutinaDesc" name="rutna" rows="10" cols="40">Rutina....</textarea>
@@ -76,6 +73,24 @@
 				</div>
 			</div>
 		</div>
-
+				<!-- Modal -->
+		<div class="modal fade" id="myModalPago" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Crear Pago</h4>
+						<label id = "usuarioRutina"></label>
+					</div>
+					<div class="modal-body">
+						<textarea id = "montoTotal" name="rutna" rows="1" cols="20">Monto....</textarea>
+					</div>
+					<div class="modal-footer">
+						<button id = "guardarPago" type="button" class="btn btn-default" data-dismiss="modal">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

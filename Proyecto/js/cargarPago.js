@@ -20,6 +20,7 @@ function cargarIngreso(){
 	var tbody = document.getElementById('tablaIngresos');
 
 	for(var i = 0; i < usuarios.length; i++){
-		tbody.innerHTML +=	"<tr><tr><td>"+usuarios[i].nombre+"</td><td><button value = "+usuarios[i].correo+"class = 'btn btn-primary' data-toggle='modal' data-target='#myModal'>Agregar Pago</button></td></tr>";
+		tbody.innerHTML +=	"<tr><tr><td>"+usuarios[i].nombre+"</td><td><button value = "+usuarios[i].correo+" class = 'btn btn-primary' data-toggle='modal' data-target='#myModal'>Agregar Pago</button></td>"+
+		"<td><button value = "+usuarios[i].correo+" class = 'btn btn-primary' data-toggle='modal' data-target='#myModal'>Agregar Pago</button></td></tr>";
 	}
 }
