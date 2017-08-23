@@ -96,8 +96,12 @@ function eliminarusuario() {
    	var  usuario = document.getElementById('usuarioRutina').innerHTML;
 	var usuarios = JSON.parse(localStorage.getItem('usuario'));
 
+
 	var usuarioRtina = document.getElementById('usuarioRutina').innerHTML;
 	var rutinasDatos = JSON.parse(localStorage.getItem('rutinas'));
+
+	var pagos = document.getElementById('usuarioRutina').innerHTML;
+	var pago = JSON.parse(localStorage.getItem('pago'));
 
 	if (!usuarios) {
      	  usuarios = new Array();
@@ -133,11 +137,31 @@ function eliminarusuario() {
             arregloRutina.push(usuarios[i]);
             }
      	 }
-     	localStorage.setItem("usuario", JSON.stringify(arreglo));
-		localStorage.setItem("rutinas", JSON.stringify(arregloRutina));
-        location.href = "adminTabla.html";
+     	
+       }
+       if (!pago) {
+       	pago = new Array();
        }
 
+            for (var i = 0; i < pago.length; i++) {
+         	if (pagos == pago[i][0]) {
+         		pago[i] = null;
+         	}
+         
+	        var pagoTot = [];
+	        for (var i = 0; i < pago.length; i++) {
+        	    if (pago[i] == null) {
+			 }
+            else {
+            pagoTot.push(usuarios[i]);
+            }
+     	 }
+     	
+       }
+		localStorage.setItem("usuario", JSON.stringify(arreglo));
+		localStorage.setItem("rutinas", JSON.stringify(arregloRutina));
+		localStorage.setItem("pago", JSON.stringify(pagoTot));
+        location.href = "adminTabla.html";
 	}	
  }
  

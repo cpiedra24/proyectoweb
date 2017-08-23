@@ -13,15 +13,18 @@ function admin(){
   }
 
   for (var i = 0;i < usuarios.length; i++) {
-    if (usuarios == null) {
+    if (usuarios[i].length == "null") {
+
+    }
+  }
   var admin =new Array();
   if (typeof(Storage) !== "undefined") {
   admin[1] = "admin";
   admin[3] = "admin";
   usuarios.push(admin);
   localStorage.setItem("usuario", JSON.stringify(usuarios));
-       }
-    }
+
+   
   }
 }          
 
