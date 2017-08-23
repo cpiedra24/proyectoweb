@@ -6,6 +6,9 @@ $( document ).ready(function() {
     $( "#btn_log" ).click(function() {
         loguearse();
     });
+      $( "#btn_logAdmin" ).click(function() {
+        loguearseAdmin();
+    });
 
 });
 function loguearse() {
@@ -27,11 +30,11 @@ function loguearse() {
         }
         if (usuariocorrecto == true) {
             localStorage.setItem('activo',username);
-            location.href = "admin.html";
+            location.href = "cliente.html";
         }
     }
 }
-function loguearse() {
+function loguearseAdmin() {
     var admin = document.getElementById('admin').value;
     var password = document.getElementById('contrasenna').value;
     var usuarios = JSON.parse(localStorage.getItem("usuario"));
