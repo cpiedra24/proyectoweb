@@ -1,13 +1,16 @@
 function calculopesoideal(){
 
 	var altura=document.getElementById("altura").value;
-	 altura=altura.toString().replace(',','.');
+	altura=altura.toString().replace(',','.');
 	var alturaMetro=altura/100;
 
 	var peso=document.getElementById("peso").value;
+
+	var indiceSexo=document.getElementById("sexo").selectedIndex;
+	var sexo=document.getElementById("sexo").options[indiceSexo].value;	
 	
-	var indiceComplexion=document.getElementById("complexion").selectedIndex;
-	var complexion=document.getElementById("complexion").options[indiceComplexion].value;	
+	var indiceComplexion= document.getElementById("fisico").selectedIndex;
+	var complexion=document.getElementById("fisico").options[indiceComplexion].value;	
 	
 	if(altura==""){
 			document.getElementById("errorPesoIdeal").innerHTML="Por favor, introduce tu altura.";
@@ -19,7 +22,6 @@ function calculopesoideal(){
 			document.getElementById("errorPesoIdeal").innerHTML="Ha introducido la altura en metros. Por favor, multipliquela por 100 para introducirla en centimetros.";
 	}
 	else{
-			document.getElementById("errorPesoIdeal").innerHTML="";
 			if(peso==""){
 				document.getElementById("errorPesoIdeal").innerHTML="Por favor, introduce tu peso.";
 			}
@@ -27,7 +29,7 @@ function calculopesoideal(){
 					document.getElementById("errorPesoIdeal").innerHTML="El peso que introduzca debe ser positivo.";
 			}
 			else{
-				document.getElementById("errorPesoIdeal").innerHTML="";
+		
 				
 				/*CALCULO IMC*/
 				var alturaCuadrado=alturaMetro*alturaMetro;
@@ -96,8 +98,10 @@ function calculopesoideal(){
 				/*CALCULO PESO MINIMO*/		
 				pesoMinimo=alturaCuadrado*18.5;
 				document.getElementById("pesoMinimo").value=Math.round(pesoMinimo*100)/100;	
-		}
+			}
 	}
 }
+
+	
 
 

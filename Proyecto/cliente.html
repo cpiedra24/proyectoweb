@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script type = "text/javascript" src = "bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 		<script type = "text/javascript" src = "js/cliente.js"></script>
+		<script type = "text/javascript" src = "js/calcularPeso.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse">
@@ -26,34 +27,67 @@
 				</ul>
 			</div>
 		</nav>
-
 		<div class="cotainer cliente">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-
 					<ul>
 						<li><a href="#">Rutina Del Dia</a></li>
-
 					</ul>
 				</div>
 				<div id="cuadroRutina" class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
-
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 peso">
 					<h3>Peso</h3>
 					<hr style="color: #0056b2;" />
 					<p>Peso</p>
 					<input id = "peso" type="text" class="nombredelacaja"> <input type="text" class="nombredelacaja" value = "kg">
-					<hr style="color: #0056b2;" />
+					<hr style="color: #0056b2;"/>
 					<p>Altura</p>
-					<input id = "altura" type="text" class="nombredelacaja"> <input type="text" class="nombredelacaja" value = "cm">
+					<input id = "altura" type="text" class="nombredelacaja"> <input type="text" class="nombredelacaja" value = "kg">
+					<hr style="color: #0056b2;"/>
+					<p>Sexo</p>
+					<select name="sexo" id="sexo">
+						<option  value="mujer" selected="selected">Mujer</option>
+						<option  value="hombre">Hombre</option>
+					</select>
+					<hr style="color: #0056b2;"/>
+					<p>Fisico</p>
+					<select name="complexion" id="fisico">
+						<option   value="hombre">Pequeña</option>
+						<option   value="mujer" selected="selected">Mediana</option>
+						<option   value="hombre">Grande</option>
+					</select>
 					<hr style="color: #0056b2;" />
 					<button type="button" onclick="calculopesoideal()">Comprobar Peso</button>
 				</div>
 			</div>
 		</div>
+		<!-- -->
+		<div id="panel-resultado">
+			<div id="resultado">
+				<div class="form_labelbox">
+					<label class="labelformresultado" for="IMC">&Iacute;ndice de Masa Corporal:</label>
+					<input type="text"  readonly="readonly" alt="" style="width: 40px;" tabindex="4" maxlength="9" size="9" class="textInput" value="" id="IMC" name="IMC"/>
+				</div>
+				<div class="form_labelbox">
+					<label class="labelformresultado" for="IMCdetallado">Seg&uacute;n este IMC obtenido, tiene:</label>
+					<input type="text" readonly="readonly" alt="" style="width: 150px;" tabindex="5" maxlength="9" size="9" class="textInput" value="" id="IMCdetallado" name="IMCdetallado"/>
+				</div>
+				<div class="form_labelbox">
+					<label class="labelformresultado" for="pesoMinimo">M&iacute;nimo Recomendado:</label>
+					<input type="text" readonly="readonly" alt="" style="width: 40px;" tabindex="7" maxlength="9" size="9" class="textInput" value="" id="pesoMinimo" name="pesoMinimo"/>
+				</div>
+				<div class="form_labelbox">
+					<label class="labelformresultado" for="pesoMaximo">M&aacute;ximo Recomendado:</label>
+					<input type="text" readonly="readonly" alt="" style="width: 40px;" tabindex="8" maxlength="9" size="9" class="textInput" value="" id="pesoMaximo" name="pesoMaximo"/>
+				</div>
+				<div class="form_labelbox">
+					<label class="labelformresultado" for="pesoIdeal" style="font-weight:bold; ">C&aacute;lculo Peso Ideal:</label>
+					<input type="text" readonly="readonly" alt="" style="width: 40px; font-weight:bold;" tabindex="6" maxlength="9" size="9" class="textInput" value="" id="pesoIdeal" name="pesoIdeal"/>
+				</div>
+			</div>
+		</div>
 		<footer class="container-fluid bg-4 text-center">
-
 			<h1>Informacion de la empresa</h1>
 			<p>...</p>
 		</footer>
