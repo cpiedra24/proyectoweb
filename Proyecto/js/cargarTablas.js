@@ -27,14 +27,21 @@ function llenarTabla(){
 	if(!usuarios){
 		usuarios = new Array();
 	}
+	for (var i = 0; i < usuarios.length; i++) {
+
+	}
 	var tbody = document.getElementById('tablaCliente');
 
 	for(var i = 0; i < usuarios.length; i++){
+			if (usuarios[i][1] != "admin") {
 		tbody.innerHTML +=	"<tr><td>"+usuarios[i].nombre+"</td><td>"+usuarios[i].altura+"</td>"+
 		"<td>"+usuarios[i].peso+"</td>"+
 		"<td><button value = "+usuarios[i].correo+" class = 'btn btn-primary' data-toggle='modal' data-target='#myModalPago'>Agregar Pago</button></td>"+
 		"<td><button value = "+usuarios[i].correo+" class = 'btn btn-primary' data-toggle='modal' data-target='#myModal'>Rutina</button></td>"+
 		"<td><button value = "+usuarios[i].correo+" class = 'btn btn-primary' onclick='eliminarusuario()'>Eliminar</button></td></tr>";	 
+
+		}
+		
 	}
 }
 
@@ -92,20 +99,14 @@ function eliminarusuario() {
 	var usuarioRtina = document.getElementById('usuarioRutina').innerHTML;
 	var rutinasDatos = JSON.parse(localStorage.getItem('rutinas'));
 
-	var usuarioExiste = false;
-	var rutnaExiste = false;
 	if (!usuarios) {
      	  usuarios = new Array();
 	}
 	for (var i = 0; i < usuarios.length; i++) {
 		if (usuario == usuarios[i].correo) {
-			usuarioExiste = true;
-		}
-	}
-	if (usuarioExiste) {
-		for (var i = 0; i < usuarios.length; i++) {
 			usuarios[i] = null;
 		}
+
 	  var arreglo = [];
          for (var i = 0; i < usuarios.length; i++) {
             if (usuarios[i] == null) {
@@ -121,14 +122,10 @@ function eliminarusuario() {
 
          for (var i = 0; i < rutinasDatos.length; i++) {
          	if (usuarioRtina == rutinasDatos[i][0]) {
-         		rutnaExiste =  true;
+         		rutinasDatos[i] = null;
          	}
-         }
-         if (rutnaExiste) {
-         	for (var i = 0; i < rutinasDatos.length; i++) {
-	         		rutinasDatos[i] = null;
-	         	}
-	         	var arregloRutina = [];
+         
+	        var arregloRutina = [];
 	        for (var i = 0; i < rutinasDatos.length; i++) {
         	    if (rutinasDatos[i] == null) {
 			 }
@@ -136,10 +133,11 @@ function eliminarusuario() {
             arregloRutina.push(usuarios[i]);
             }
      	 }
-       }
-		localStorage.setItem("usuario", JSON.stringify(arreglo));
+     	localStorage.setItem("usuario", JSON.stringify(arreglo));
 		localStorage.setItem("rutinas", JSON.stringify(arregloRutina));
         location.href = "adminTabla.html";
+       }
+
 	}	
  }
  

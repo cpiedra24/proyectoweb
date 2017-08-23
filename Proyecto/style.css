@@ -119,3 +119,10 @@ margin-left: 27%;
   background-color: #D8D8D8;
   font-size: 2em;
 }
+#panel-resultado{
+display: flex;
+justify-content: center;
+}
+#resultado{
+	display: flex;
+}

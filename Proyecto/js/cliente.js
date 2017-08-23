@@ -20,6 +20,8 @@ function obtenerRutinas(){
   		}
   } 
 }
+
+
 function logOut(){
       localStorage.removeItem('activo');
       location.href = "index.html";    
